@@ -29,11 +29,12 @@ be located in column 2 of the well plate on the magnetic deck.
 
 ![0D45A1DCF5FC4FEB88225B149194CEFC](https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/152276516/2dfdde93-1dfa-4efa-87b8-e488bcb00ce2)
 
-Notes: 
+### Notes and Preparation:
+
 1) Make sure to calibrate the Opentron, particularly the Z-axis.
 2) When conducting the wet runs, the correct temperatures and incubation times were not used as they took too long, and no 
 reagents/enzymes were actually being used.
 3) We deleted the step for single-cell picking. Single-cell samples are assumed to be isolated by previous manual procedures—
-for example, FACS or MACS. They are originally located in column 1 of the PCR plate inside the thermocycler. 
+for example, FACS or MACS. Ensure they are located in column 1 of the PCR plate inside the thermocycler. 
 
 -------------------
