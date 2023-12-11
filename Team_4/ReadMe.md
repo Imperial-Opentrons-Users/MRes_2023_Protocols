@@ -24,7 +24,7 @@ In this ReadMe: deck set up, protocol overview, problems overcome, problems rema
 - Slot 2: Corning 96 deep well plate (360 µL) of 1 mL cultures, 16 samples in columns 1 & 2
 - Slot 3: Thermo Fisher 96 well plate (400 µL)
 - Slot 4: Magnetic module with Opentrons 96 flat bottom adapter and Thermo Fisher 96 well plate (400 µL)
-- Slot 5-10: P300
+- Slot 5-10: P300 pipette tips
 - Slot 11: USA Scientific 12 well reservoir (22 mL) for waste liquids
   - A1-8: waste liquids
   - A9-12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
