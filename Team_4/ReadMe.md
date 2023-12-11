@@ -1,4 +1,4 @@
-# MResSSB_S5_Grp4
+##### MResSSB_S5_Grp4: Chelsea Dack, Jonathan Foldi, Kalyan Ghadiyaram, Jeremy Chua, Anwesha Mohapatra, Ayushi Katdare.
 
 # Ni-NTA purification + ELISA for Polizzi group
 
