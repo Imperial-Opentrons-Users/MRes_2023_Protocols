@@ -40,10 +40,9 @@ Features of Opentron script generator (code A):
 
 <img width="399" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/87d0b134-542e-4b98-a6f7-5d49dc10e327">
 
-Figure 1: Customisable opentron script generator
+Figure 1: Customisable opentron script generator interface.
 
-After naming your new opentron cherrypicking script, it will appear in your downloads ready to be uploaded into opentron 
-directly.
+After naming your new opentron cherrypicking script, a python script will be generated and will appear in the downloads folder ready to be uploaded into opentron directly.
  
 Featured of Opentron Script (Code B):
   - Using the inputs and data provided from Code A to create a ready to use opentron script
