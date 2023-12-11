@@ -2,6 +2,8 @@
 
 ## Generating 96-well plate randomised layout from predefined media conditions for growing and monitoring the efficiency of carbon sequestering bacterial cells, through a plate reader assay.
 
+Authors: Celine Caraffa, Carolina Pestana, William McKeny, Alfred Brown, Timon Schneider
+
 ### Introduction
 
 We took Noah Sprent's protocol for growing and monitoring the efficiency of carbon-sequestering bacterial cells. The original protocol is fully automated using a Hamilton Robot, our objective was to extract key steps and demonstrate the OpenTrons 2's capabilities as a cheaper, more accessible substitute.
