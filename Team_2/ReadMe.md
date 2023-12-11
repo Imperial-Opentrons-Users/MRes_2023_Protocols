@@ -12,8 +12,12 @@ Cristina Vuolo
 
 
 Overview
-    This code provides an accessible way to create custom cherrypicking protocols from a variety of different data sources provided
-    that the data is in a 96 well plate list format.
+    This code provides an accessible way to create custom cherrypicking protocols from a variety of different data sources, 
+    provided that the data is in a 96 well plate list format.
+    
+    The code is divided in two sections: 
+    - Code A is the Opentron script generator where the user can customise its cherry picking requirments
+    - Code B is the Opentron script that runs on the Opentron machine according to the features input by the user
     
 Features of Opentron script generator (code A)
   - able to specify your directory (/Users/Cassandra/Downloads)
