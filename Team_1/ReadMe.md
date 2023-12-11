@@ -1,4 +1,4 @@
-# Automating the Sample Preparation and PCR-Genotyping of Mosquito Larvae
+# Automating Sample Preparation and PCR-Genotyping of Mosquito Larvae
 
 ### Overview and pre-automation preparation
 We have attempted to automate two key parts of a laborious mosquito genotyping protocol; larvae sample preparation, and multiplexed PCR.
@@ -32,7 +32,7 @@ Afterwards, you will be prompted to enter PCR annealing temperature (Celsius) an
 
 Once that is done, a Python script (OT2_script.py) is generated for you to upload onto the OpenTron.
 
-### Part 1: Larvae sample preparation
+### Part 1: Larvae sample preparation (lysis step)
 Brief description of what the code does:
 - 20.5µl lysis buffer (from reservoir A3) is added to each well in the PCR 96-well rack (already in the thermocycler). Note that the tips aren't changed between adding the lysis buffer. As a p20 is being used, 20.5ul had to be divided, adding 10.25µl lysis buffer twice.
 - The control well (H12) contains only water and no lysis buffer. This has been coded by using a different reservoir (A4) where the last well contains only water and the other wells contain lysis buffer.
