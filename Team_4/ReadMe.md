@@ -21,8 +21,8 @@ In this ReadMe: deck set up, protocol overview, problems overcome, problems rema
   - A10: 10 mL ELISA conjugated secondary antibody (Anti-Mouse)
   - A11: 10 mL ELISA PnPP (conjugated secondary antibody substrate)
   - A12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
-- Slot 2: Corning 96 deep well plate (360 µL) of 1 mL cultures, 16 samples in columns 1 & 2
-- Slot 3: Thermo Fisher 96 well plate (400 µL)
+- Slot 2: 4ti0136 96 deep well plate (2200 µL) of 1 mL cultures, 16 samples in columns 1 & 2
+- Slot 3: Thermo Fisher 96 well plate (400 µL), will contain final ELISA samples
 - Slot 4: Magnetic module with Opentrons 96 flat bottom adapter and Thermo Fisher 96 well plate (400 µL)
 - Slot 5-10: P300 pipette tips
 - Slot 11: USA Scientific 12 well reservoir (22 mL) for waste liquids
