@@ -54,10 +54,9 @@ ELISA:
 
 ## Problems overcome:
 - Can’t fit deep well plate onto magnet – had to divide samples into 2x 300 µL.
--	Avoid centrifuged pellet / beads when pipetting – changed z value.
--	Liquid uptake not uniform – increased all z values.
+-	Avoid centrifuged pellet / beads when pipetting – increased z value to 5.
+-	Liquid uptake not uniform from deep well plate – increased all z values to 5, decreased back to default of 1 for 96 well plate.
 -	Magnetic module very strong, affects protein binding / elution – transferred off magnet for these steps.
--	ELISA wash 5 min agitating – mixed lots instead.
 -	Waste liquid - function to avoid overflowing.
 -	Large volume of PBS - function to determine which well to use.
 -	Tip use – reused same tips where possible eg. for washes etc.
@@ -68,5 +67,5 @@ ELISA:
 -	Cover wells with cover slip - removed this.
 -	Not reproducible – reagent volumes should be assigned variables and calculated in the script.
 -	Scale limited by deck space / tips – could split into two scripts (purification + ELISA).
--	Tip use – pipette dispenses over top of waste wells to avoid contamination.
+-	Tip use – pipette dispenses over top of waste wells to avoid contamination, reused tips for waste removal (ideally use clean).
 -	ELISA standards not included to accommodate all 16 samples – uses data from previous run. If not limited by number of plate wells / deck space, it would be better to run standard alongside.
