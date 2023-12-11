@@ -17,14 +17,14 @@ Overview
     
 Features of Opentron script generator (code A)
   - able to specify your directory (/Users/Cassandra/Downloads)
-  - able to specify the number of input CSV files (number of input plates) and names (sample_1.csv, sample_2.csv, sample_3.csv)
+  - able to specify the number of input CSV files (number of input plates) and names (e.g., sample_1.csv, sample_2.csv, sample_3.csv)
   - able to specify your column for sorting data (fluorescence, optical density etc.)
   - able to Specify source well column (Well, Well_Id, etc.)
   - able to Specify if there are any blanks in the input data and declare specific wells
   - optional to blank correct
   -   if no, remove blanks from the input data
   -   if yes, average blanks per plate and blank corrects data. removes blanks from the input data
-  - able to sort data by min/max values or by a user-specified range (1000-1200)
+  - able to sort data by min/max values or by a user-specified range (e.g., 1000-1200)
   - able to choose the number of hits selected
   - able to choose how many duplicates you want in the destination plate
   - code tells user if the muber of destination wells exceeds 96 values
@@ -32,6 +32,9 @@ Features of Opentron script generator (code A)
   - able to create and name a fully customisable and Opentron-ready python script.
   - outputs a csv file with layout of destination plate
   - easy to use interface that increases accessability of opentron codes.
+
+<img width="399" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/87d0b134-542e-4b98-a6f7-5d49dc10e327">
+
 
 After naming your new opentron cherrypicking script it will appear in your downloads ready to be uploaded into opentron directly.
  
@@ -45,9 +48,9 @@ Initial labware set-up for a two source plate run
 
 1 - 300ul tip rack
 2 - empty
-3 - destination 96-well 1300ul deep well plate
-4 - Source plate 1
-5 - Source plate 2
+3 - destination: Corning flat 96-well 360ul plate
+4 - Source plate 1: Thermofisher 96-well 1300ul plate
+5 - Source plate 2: Thermofisher 96-well 1300ul plate
 6 - empty
 7 - empty
 8 - empty
@@ -65,4 +68,6 @@ Problems encountered and solved
 Future work
     - add a mixing step to code B to ensure that the destination plate contains suitable levels of source content
     (wet run highlighted that it isnt a major issue)
+    - include graphical output in the live script to get a representation of the cherry picking
+    - add multiple destination plates
 
