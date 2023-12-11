@@ -47,4 +47,4 @@ The thermocycler is programmed to run 40 cycles. Once the program finishes, the 
 You need to ensure:
 - Pipette tip boxes are refilled
 - Block 1 contains the lysed gDNA sample plate
-- Reservoir is carefully washed out (if you are doing a PCR with another set of primers) and refilled with respective Master Mixes.
+- Reservoir is carefully washed out (if you are doing a PCR with another set of primers) and refilled with respective Master Mixes, except for A3 and A4 which previously contained lysis buffer.
