@@ -17,7 +17,11 @@ WELLS = [
     f"{row}{col}" for col in range(1, 7) for row in string.ascii_uppercase[:8]
 ]  # 48 wells
 
-CONDITIONS_CONFIG = [  # Your input here: Concentration of stocks available for different media components
+
+# USER input: final concentration of C and S desired in wells for each condition
+# each dictionary in CONDITIONS_CONFIG represents one condition
+# add more lines as needed (conditions must be even number)
+CONDITIONS_CONFIG = [
     {"c1": 100, "c2": 0, "s1": 10, "s2": 0},
     {"c1": 100, "c2": 0, "s1": 0, "s2": 10},
     {"c1": 100, "c2": 0, "s1": 0, "s2": 0},
@@ -25,6 +29,9 @@ CONDITIONS_CONFIG = [  # Your input here: Concentration of stocks available for 
     {"c1": 0, "c2": 100, "s1": 0, "s2": 10},
     {"c1": 0, "c2": 100, "s1": 0, "s2": 0},
 ]
+
+# USER input: Concentartion of stocks availablee for C/S
+STOCK = {"c1": 1000, "c2": 1000, "s1": 1000, "s2": 1000}  # mM  # mM  # mg/ml  # mg/ml
 
 
 def read_conditions_from_csv(file_path):
@@ -52,7 +59,7 @@ def generate_file_content(layout_json: str, conditions_config_json: str):
     with open("protocol_template.py", "r") as template:
         file_content = template.read()
 
-    insert = f"""layout_json = \"\"\"{layout_json}\"\"\"\nlayout = json.loads(layout_json)\nconditions_config_json = \"\"\"{conditions_config_json}\"\"\"\nconditions_config = json.loads(conditions_config_json)"""
+    insert = f"""layout_json = \"\"\"{layout_json}\"\"\"\nlayout = json.loads(layout_json)\nconditions_config_json = \"\"\"{conditions_config_json}\"\"\"\nconditions_config = json.loads(conditions_config_json)\nstock_json = \"\"\"{json.dumps(STOCK)}\"\"\"\nstock = json.loads(stock_json)"""
 
     file_content = file_content.replace("# GENERATED CODE INSERT HERE #", insert)
 

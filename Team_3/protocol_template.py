@@ -4,6 +4,7 @@ import json
 
 layout = None
 conditions_config = None
+stock = None
 
 # GENERATED CODE INSERT HERE #
 
@@ -19,14 +20,6 @@ conditions = layout["conditionToWell"]
 # PART 1: making master mixes for each condition suing available stock in lab
 
 # PART 1a : define conditions, volumes and concentrations
-
-# USER input: final concentration of C and S desired in wells for each condition
-# each dictionary in CONDITIONS_CONFIG represents one condition
-# add more lines as needed (conditions must be even number)
-
-
-# USER input: Concentartion of stocks availablee for C/S
-STOCK = {"c1": 1000, "c2": 1000, "s1": 1000, "s2": 1000}  # mM  # mM  # mg/ml  # mg/ml
 
 # USER define number of wells to use in 96 well plate
 NUM_WELLS = 48
@@ -48,10 +41,10 @@ conditionToMediaVol = (
 )  # store volumes needed of C1, c2, S1, S2, minimal media for each condition
 
 for condition in conditions_config:  # calculate volume of each stock for each condition
-    c1stock_pip = condition["c1"] * total_vol / STOCK["c1"]
-    c2stock_pip = condition["c2"] * total_vol / STOCK["c2"]
-    s1stock_pip = condition["s1"] * total_vol / STOCK["s1"]
-    s2stock_pip = condition["s2"] * total_vol / STOCK["s2"]
+    c1stock_pip = condition["c1"] * total_vol / stock["c1"]
+    c2stock_pip = condition["c2"] * total_vol / stock["c2"]
+    s1stock_pip = condition["s1"] * total_vol / stock["s1"]
+    s2stock_pip = condition["s2"] * total_vol / stock["s2"]
     minmed_pip = total_vol - (c1stock_pip + c2stock_pip + s1stock_pip + s2stock_pip)
 
     ## Create a dictionary to store the information
