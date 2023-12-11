@@ -62,8 +62,4 @@ def run(protocol: protocol_api.ProtocolContext):
      m300.transfer(50, source_96_2.wells('A'+str(i)), flat_96_val2.wells('A'+str(i)), mix_before=(2,50), new_tip='always', blow_out=True, blowout_location='destination well', touch_tip=True)
 
 
-  #for index, source_well in enumerate(source_96.rows('A')[1:13]):
-    #Resuspend by aspirating and dispensing
-    #m300.pick_up_tip(tiprack2_300)
-        # Transfer 200 µL to the flat-bottom 96-well plate
-    #m300.transfer(200, source_well, flat_96_val.wells[index], mix_before=(2,50), new_tip='always', blow_out=True, blowout_location='destination well', touch_tip =True)
+ 
