@@ -6,7 +6,7 @@ Following protocols provided by the Polizzi group (from Andre Ohara), this scrip
 
 In this ReadMe: deck set up, protocol overview, problems overcome, problems remaining.
 
-Nb. this protocol requires custom labware, see thermofischer_96_wellplate_400ul.json and .py files.
+Nb. this protocol requires custom labware, see thermofischer_96_wellplate_400ul.json and .py files. The "ELISA testing-6-8.py" is for running the script on the robot OT-2. The "ELISA testing annotated-5.ipynb" is for simulating the script.
 
 ## Deck set up:
 - Left pipette: P300 Multi Gen 2
