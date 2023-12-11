@@ -6,6 +6,8 @@ Following protocols provided by the Polizzi group (from Andre Ohara), this scrip
 
 In this ReadMe: deck set up, protocol overview, problems overcome, problems remaining.
 
+Nb. this protocol requires custom labware, see thermofischer_96_wellplate_400ul.json and .py files.
+
 ## Deck set up:
 - Left pipette: P300 Multi Gen 2
 - Slot 1: USA Scientific 12 well reservoir (22 mL) containing reagents:
@@ -26,8 +28,8 @@ In this ReadMe: deck set up, protocol overview, problems overcome, problems rema
 - Slot 4: Magnetic module with Opentrons 96 flat bottom adapter and Thermo Fisher 96 well plate (400 µL)
 - Slot 5-10: P300 pipette tips
 - Slot 11: USA Scientific 12 well reservoir (22 mL) for waste liquids / additional PBS-T
-  - A1-8: waste liquids
-  - A9-12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
+  - A1-9: waste liquids
+  - A10-12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
 
 ## Protocol overview (16 samples): 
 Raw sample preparation:
