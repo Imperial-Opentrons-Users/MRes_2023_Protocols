@@ -15,7 +15,7 @@ The steps and subsequent files are:
 1. generate_protocol.py - The user inputs desired conditions, concentrations, volumes and number of wells needed for the assay, the code will calculate the master needed for each condition and assign random wells to each condition
 2. protocol_template.py - prepares master mixes and pipettes respective conditions into randomised wells predefined from generate_protocol.py
 3. silicabeads.py - plates 200ul of cell culture into 96 well plate for centrifugation
-4. supernatant_aspirate_speed.py - aspirates supernatant after centrifuging silica beads into a 96-well plate.
+4. remove_supernatant_96_well.py - aspirates supernatant after centrifuging silica beads into a 96-well plate.
 
 #### [Protocol Generator](/Team_3/generate_protocol.py)
 
