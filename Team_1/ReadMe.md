@@ -1,7 +1,7 @@
 # Automating Sample Preparation and PCR-Genotyping of Mosquito Larvae
 
 ### Overview and pre-automation preparation
-We have attempted to automate two key parts of a laborious mosquito genotyping protocol; larvae sample preparation, and multiplexed PCR.
+We have attempted to automate two key parts of a laborious mosquito genotyping protocol; larvae sample preparation, and multiplexed PCR. 
 Note that before running this code, the preparation of a 96-well plate already containing a single larva in each well is necessary.
   This includes the manual exclusion of larvae from the 'Dil' wells (B3, D6, and F9), by not placing larvae here.
   Unfortunately, the individual placement of live larvae into each well was not possible to automate in the timeframe of this project.
