@@ -5,13 +5,16 @@ We have attempted to automate two key parts of a laborious mosquito genotyping p
 Note that before running this code, the preparation of a 96-well plate already containing a single larva in each well is necessary.
   This includes the manual exclusion of larvae from the 'Dil' wells (B3, D6, and F9), by not placing larvae here.
   Unfortunately, the individual placement of live larvae into each well was not possible to automate in the timeframe of this project.
-  The PCR of the lysed mosquito larvae uses three primers; two located in the wildtype and one located within the desired insert. These primers are included in the pre-made master mix made prior to the automation steps. The PCR can be considered multiplex due to it testing whether the insert is present in both, one, or neither allele. The presence of the insert will be indicative from larger bands present on agarose gel post automated PCR cycle.
+  The PCR of the lysed mosquito larvae uses three primers; two located in the wildtype and one located within the desired insert. These primers are included in the pre-made master mix made prior to the automation steps. The PCR can be considered multiplex due to it testing whether the insert is present in both, one, or neither allele. The presence of the insert will be indicative from larger bands present on agarose gel post-automated PCR cycle.
 
 _The reservoirs must be carefully prepared as follows:_
 - A1: overall Master Mix for the PCR step
 - A2: water
 - A3: overall mixed lysis buffer for the sample preparation step (DNARelease Additive + Dilution Buffer, 5ul/250ul, thoroughly mixed and vortexed)
 - A4: same as A3, overall lysis buffer in the first 9 wells of the reservoir, except for the last well which has water just for the control (will be H12 in the PCR plate)
+
+#### Overview of preparing the reservoir
+![Here is how you would set up the reservoir](asset/ReservoirSetup.png)
 
 Note that depending on the genotyping-specific PCR being carried out, the master mix composition in the A1 reservoir wells will have different primers.
 The A1 Master Mix must also be prepared taking into account that for a 10ul PCR reaction volume. 
