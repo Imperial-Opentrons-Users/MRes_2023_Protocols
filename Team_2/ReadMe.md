@@ -13,7 +13,7 @@ AUTHORS
 
 Overview:
     This code provides an accessible way to create custom cherrypicking protocols from a variety of different data sources, 
-    provided that the data is in a 96 well plate list format. The file that can be used directly with the opentrons machine is called final.py and the code that can be used on simulation mode is final_simulation.py.
+    provided that the data is in a 96 well plate list format. The file that can be used directly with the opentrons machine is called final.py and the code that can be used on simulation mode is final_simulation.py. The file used to set up plates prior to our wet run is called final_precode.py.
 
 The code is divided in two sections: 
 - Code A is the Opentron script generator where the user can customise its cherry picking requirments
@@ -98,3 +98,4 @@ Future work
 - add a mixing step to code B to ensure that the destination plate contains suitable levels of source content (wet run highlighted that it isnt a major issue)
 - include graphical output in the live script to get a representation of the cherry picking
 - add the option to have multiple destination plates
+- Requires csv file to be cleaned up before running the script (remove text above columns). We decided not to incorporate this feature because it is very specific to the BMG machine. However in future, we could include an option to clean up data files from different machines into this standard format.
