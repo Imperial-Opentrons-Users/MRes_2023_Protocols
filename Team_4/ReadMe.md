@@ -67,5 +67,5 @@ ELISA:
 -	Cover wells with cover slip - removed this.
 -	Not reproducible – reagent volumes should be assigned variables and calculated in the script.
 -	Scale limited by deck space / tips – could split into two scripts (purification + ELISA).
--	Tip use – pipette dispenses over top of waste wells to avoid contamination, reused tips for waste removal (ideally use clean).
+-	Tip use – reused tips for waste removal (ideally use clean), pipette could dispense over top of waste wells to avoid contamination.
 -	ELISA standards not included to accommodate all 16 samples – uses data from previous run. If not limited by number of plate wells / deck space, it would be better to run standard alongside.
