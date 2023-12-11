@@ -27,7 +27,7 @@ Run 'user_input.py' and you will prompted with 2 automation options
 
 Afterwards, you will prompted to enter PCR annealing temperature (Celsius) and extension time (seconds). 
 
-Once that is done, a Python script is generated for you to upload onto the OpenTron.
+Once that is done, a Python script (OT2_script.py) is generated for you to upload onto the OpenTron.
 
 ### Part 1: Larvae sample preparation
 Brief description of what the code does:
