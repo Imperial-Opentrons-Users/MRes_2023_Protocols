@@ -17,10 +17,9 @@ Our team has automated the protocol with 4 scripts total due to the limited spac
 magnetic modules, and thermocycler are unable to be plugged in at the same time.
 
 We have 2 Executable Scripts and 2 Simulation Scripts: 
-1) The sample_prep script ran first automates the protocol's sample prep/MDA part. This involves the preparation and mixing 
+1) The Sample_prep script runs first and automates the protocol's sample prep/MDA part. This involves the preparation and mixing 
 of the reagents (enzymes and buffers) with the DNA sample, followed by the amplification reaction done inside the thermocycler.
-2) The dna_purification script automates the purification part to isolate high-quality DNA from the amplification. Quantification 
-of DNA concentration is meant to be done via Nanodrop. 
+2) The DNA_purification script runs afterwards and automates the purification part to isolate high-quality DNA from the amplification. Quantification of DNA concentration is meant to be done via Nanodrop. 
 
 The protocol is designed to amplify at most 8 samples (but aim to use at least 1 positive/negative control) due to equipment 
 constraints; the p20-single can be swapped out for a p20-multi to handle more samples. The results of the purification will
