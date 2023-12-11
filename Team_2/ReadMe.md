@@ -13,7 +13,7 @@ AUTHORS
 
 Overview:
     This code provides an accessible way to create custom cherrypicking protocols from a variety of different data sources, 
-    provided that the data is in a 96 well plate list format.
+    provided that the data is in a 96 well plate list format. The file that can be used directly with the opentrons machine is called final.py and the code that can be used on simulation mode is final_simulation.py.
 
 The code is divided in two sections: 
 - Code A is the Opentron script generator where the user can customise its cherry picking requirments
