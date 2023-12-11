@@ -31,7 +31,7 @@ be located in column 2 of the well plate on the magnetic deck.
 
 ### Notes and Preparation:
 
-1) Make sure to calibrate the Opentron, particularly the Z-axis.
+1) Make sure to calibrate the Opentron, particularly the Z-axis, on both scripts separately.
 2) When conducting the wet runs, the correct temperatures and incubation times were not used as they took too long, and no 
 reagents/enzymes were actually being used.
 3) We deleted the step for single-cell picking. Single-cell samples are assumed to be isolated by previous manual procedures—
