@@ -32,7 +32,7 @@ Features of Opentron script generator (code A):
   - able to sort data by min/max values or by a user-specified range (e.g., 1000-1200)
   - able to choose the number of hits selected
   - able to choose how many duplicates you want in the destination plate
-  - code tells user if the muber of destination wells exceeds 96 values
+  - code tells user if the number of destination wells exceeds 96 values
   - able to add blanks in the destination plate at user specified locations
   - able to create and name a fully customisable and Opentron-ready python script.
   - outputs a csv file with layout of destination plate
