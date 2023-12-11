@@ -19,6 +19,16 @@ Instead of adding 0.25ul of the gDNA, 1ul (of a more dilute sample) will be adde
 
 #### Overview of setting up the labware in the OT2 block layout
 ![Here is how you would set up the blocks](asset/LabwareOverview.png)
+
+### How to use code
+Run 'user_input.py' and you will prompted with 2 automation options
+- 1: Lysis + Dilution and PCR setup
+- 2: PCR setup only
+
+Afterwards, you will prompted to enter PCR annealing temperature (Celsius) and extension time (seconds). 
+
+Once that is done, a Python script is generated for you to upload onto the OpenTron.
+
 ### Part 1: Larvae sample preparation
 Brief description of what the code does:
 - 20.5ul lysis buffer (from reservoir A3) is added to each well in the PCR 96-well rack (already in the thermocycler). Note that the tips aren't changed between adding the lysis buffer. As a p20 is being used, 20.5ul had to be divided, adding 10.25ul lysis buffer twice.
