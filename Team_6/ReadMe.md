@@ -6,11 +6,12 @@ The project aims to achieve Opentron automation of whole genome Multiple Displac
 a method of non-specific DNA amplification using random hexamer primers and the phi29 DNA polymerase. These Scripts are 
 designed to streamline the MDA protocol by introducing automation.
 
-### Source
+### Source:
 
 Automated protocol adapted from Spits et al. (2006).
 
-PROTOCOL DESCRIPTION:
+### Protocol Description:
+
 The MDA protocol consists of 3 stages— a sample preparation stage, a DNA amplification stage, and a purification stage.
 Our team has automated the protocol with 4 scripts total due to the limited space in the Opentron deck. The temperature modules, 
 magnetic modules, and thermocycler are unable to be plugged in at the same time.
@@ -24,6 +25,10 @@ of DNA concentration is meant to be done via Nanodrop.
 The protocol is designed to amplify at most 8 samples (but aim to use at least 1 positive/negative control) due to equipment 
 constraints; the p20-single can be swapped out for a p20-multi to handle more samples. The results of the purification will
 be located in column 2 of the well plate on the magnetic deck. 
+
+### Labware Setup:
+
+![0D45A1DCF5FC4FEB88225B149194CEFC](https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/152276516/2dfdde93-1dfa-4efa-87b8-e488bcb00ce2)
 
 Notes: 
 1) Make sure to calibrate the Opentron, particularly the Z-axis.
