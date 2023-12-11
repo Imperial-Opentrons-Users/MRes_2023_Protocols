@@ -20,30 +20,26 @@ In this ReadMe: deck set up, protocol overview, problems overcome, problems rema
   - A9: 10 mL ELISA primary antibody (Anti-His-tag Mouse)
   - A10: 10 mL ELISA conjugated secondary antibody (Anti-Mouse)
   - A11: 10 mL ELISA PnPP (conjugated secondary antibody substrate)
+  - A12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
 - Slot 2: Corning 96 deep well plate (360 µL) of 1 mL cultures, 16 samples in columns 1 & 2
 - Slot 3: Thermo Fisher 96 well plate (400 µL)
 - Slot 4: Magnetic module with Opentrons 96 flat bottom adapter and Thermo Fisher 96 well plate (400 µL)
-- Slot 5: P300 pipette tips
-- Slot 6: P300 pipette tips
-- Slot 7: P300 pipette tips
-- Slot 8: N/A
-- Slot 9: P300 pipette tips
-- Slot 10: P300 pipette tips
+- Slot 5-10: P300
 - Slot 11: USA Scientific 12 well reservoir (22 mL) for waste liquids
-  - A1-7: waste liquids
-  - A8-11: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
+  - A1-8: waste liquids
+  - A9-12: 22 mL ELISA PBS-T (Phosphate buffered saline-0.05% Tween 20 solution)
 
 ## Protocol overview (16 samples): 
 Raw sample preparation:
   1. 800 µL supernatant is extracted from 1 mL centrifuged cultures (slot 2 cols 1&2)
   2. Add 80 µL NaOH, wait 1 hour for salts to settle
-  3. Extract 600 µL neutralised supernatant for purification (leaves 280 µL in slot 2 cols 3&4 for reserve)
+  3. Extract 600 µL neutralised supernatant for purification, leaving 280 µL in reserve (slot 2 cols 3 & 4)
 
 Ni-NTA magnetic bead purification:
   1. Equilibrate 1 mL of Ni-NTA magnetic beads
   2. Add 30 µL beads to 300 µL supernatant (two replicates per sample, slot 4 sample 1-8 cols 2&3, sample 9-16 cols 4&5)
   3. Wash twice with 300 µL wash buffer
-  4. Add 100 µL elution buffer, combine replicates (total 200 µL per sample), elute (total 200 µL slot 2 sample 1-8 col 11, sample 9-16 col 12)
+  4. Add 100 µL elution buffer, combine replicates (total 200 µL per sample, slot 2 sample 1-8 col 11, sample 9-16 col 12)
 
 ELISA:
   1. Uses 100 µL purified samples, leaving 100 µL for reserve (slot 2 sample 1-8 col 11, sample 9-16 col 12)
@@ -57,18 +53,20 @@ ELISA:
   10. Use data from previously ran standards to determine protein of interest concentration in the samples
 
 ## Problems overcome:
-- Can’t fit deep well onto magnet – had to divide samples into 2x 300 µL.
+- Can’t fit deep well plate onto magnet – had to divide samples into 2x 300 µL.
 -	Avoid centrifuged pellet / beads when pipetting – changed z value.
--	Liquid uptake not uniform – increased all z values, may not remove all liquid?
--	Magnet too strong, affects bead binding / elution – transferred off magnet for these steps.
+-	Liquid uptake not uniform – increased all z values.
+-	Magnetic module very strong, affects protein binding / elution – transferred off magnet for these steps.
 -	ELISA wash 5 min agitating – mixed lots instead.
--	Waste liquid - function to avoid overflowing, pipette dispenses over top to avoid contamination.
+-	Waste liquid - function to avoid overflowing.
 -	Large volume of PBS - function to determine which well to use.
+-	Tip use – reused same tips where possible eg. for washes etc.
 
 ## Problems remaining:
-- Shaking steps (no shaker module, had manually move to shaker) – removed these.
+- Shaking steps (no shaker module, would have to manually move to shaker) – removed these.
 -	Invert plate & tap to remove excess liquid – removed these.
--	Not reproducible – volumes should be assigned variables and calculated in the script.
+-	Cover wells with cover slip - removed this.
+-	Not reproducible – reagent volumes should be assigned variables and calculated in the script.
 -	Scale limited by deck space / tips – could split into two scripts (purification + ELISA).
--	Tip use – could improve by reusing same tips for washes.
+-	Tip use – pipette dispenses over top of waste wells to avoid contamination.
 -	ELISA standards not included to accommodate all 16 samples – uses data from previous run. If not limited by number of plate wells / deck space, it would be better to run standard alongside.
