@@ -52,7 +52,7 @@ Featured of Opentron Script (Code B):
     
 Initial labware set-up for a two source plate run:
 1) 300ul tip rack
-2) empty
+2) 300ul tip rack
 3) destination: Corning flat 96-well 360ul plate
 4) Source plate 1: Thermofisher 96-well 1300ul plate
 5) Source plate 2: Thermofisher 96-well 1300ul plate
@@ -63,6 +63,10 @@ Initial labware set-up for a two source plate run:
 10) empty
 11) empty
 
+<img width="295" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/3bb65d54-0fed-4fb4-a575-372a613881ef">
+
+Figure 2: Example Opentron labware setup.
+
 Location of source plate is determined using the simple formula (source plate number + 3 ) thus max number of 
 source plates is 8 (11-3)
 
@@ -70,15 +74,15 @@ Example plates:
 
 <img width="602" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/04f008df-9a68-498b-9d89-2d532c7a8f19">
 
-Figure 2: Example source plate 1.
+Figure 3: Example source plate 1.
 
 <img width="606" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/02378dd8-bb3c-4d9b-a022-3311ae4acda5">
 
-Figure 3: Example source plate 2.
+Figure 4: Example source plate 2.
 
 <img width="603" alt="image" src="https://github.com/Imperial-Opentrons-Users/MRes_2023_Protocols/assets/150702852/494e2056-8c09-41ac-bf43-78d64920b506">
 
-Figure 4: Example destination plate with cherry picked samples from source plates 1 and 2. The Opentron script was 
+Figure 5: Example destination plate with cherry picked samples from source plates 1 and 2. The Opentron script was 
 customised to select the largest 23 hits across the two plates and replicate each sample three times in the destination 
 plate. Note that wells A1 and E6 were also customised to be blanks.
 
@@ -94,4 +98,3 @@ Future work
 - add a mixing step to code B to ensure that the destination plate contains suitable levels of source content (wet run highlighted that it isnt a major issue)
 - include graphical output in the live script to get a representation of the cherry picking
 - add the option to have multiple destination plates
-
