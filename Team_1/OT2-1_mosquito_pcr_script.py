@@ -43,9 +43,10 @@ def run(protocol: protocol_api.ProtocolContext): #runs the lysis (sample prep) s
                     blow_out=True, blowout_location='destination well', new_tip='never')
     p20.drop_tip()  # note: tip is not changed in between each well, as the
                     # pipette tip has been offset to minimise contact with the liquid in each well
-
+    p20.pickup_tip()
     p20.transfer(20.5, reservoir['A4'].bottom(z=-2), P2.rows()[0][11].top(z=-11),touch_tip=False,
                  blow_out=True, blowout_location='destination well', new_tip='never') # creates the control well (H12) with just water (no lysis buffer)
+    P20.drop_tip()
 
     thermocycler.close_lid() # marks the start of the heating for lysis
 
