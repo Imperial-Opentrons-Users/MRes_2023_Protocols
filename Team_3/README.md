@@ -1,10 +1,34 @@
-# Team 3
+# Random Media Mix Allocation into 96 Well Plate and Supernatant removal
+### Team 3: Celine Caraffa, Alfie Brown, Will McKenny, Carolina Pestana, Timon Schneider
 
-## Generating 96-well plate randomised layout from predefined media conditions for growing and monitoring the efficiency of carbon sequestering bacterial cells, through a plate reader assay.
+### Context
 
-### Introduction
+Initially, Noah Sprent approached us with a protocol for growing and monitoring the efficiency of carbon-sequestering bacterial cells which we heavily adapted to fit the constraints of this project. In this repository, you will find two protocols. 
+1. [Media Mix Allocator](/Team_3/generate_protocol.py) which can be run to generate protocols that make 6 master mixes which are then distributed into 8 random wells each.
+2. [Supernatant Removal](/Team_3/remove_supernatant_96_well.py) which removes liquid supernatant from a 96 well plate.
 
-We took Noah Sprent's protocol for growing and monitoring the efficiency of carbon-sequestering bacterial cells. The original protocol is fully automated using a Hamilton Robot, our objective was to extract key steps and demonstrate the OpenTrons 2's capabilities as a cheaper, more accessible substitute.
+## Setup
+### General Requirements (Start here)
+- Installed Python Version >3.10
+
+### Random Media Mix Allocator
+#### When to use
+You have 6 media mixes with specified target concentrations from 4 different media components, that you first want to make using the Opentrons and then have it automatically pipetted into 8, randomly selected wells in the plate.
+#### How to use
+1. Download the repository
+2. Open this folder in your terminal
+3. Install all necessary requirements: `pip install -r requirements.txt`
+4. Specify all necessary user inputs at the beginning of [Media Mix Allocator](/Team_3/generate_protocol.py)
+5. Run the protocol generator: `python generate_protocol.py`. You will find the generated protocol in the `generated` folder alongside the well-media-mix assignment.
+6. Load the protocol onto an Opentrons and run it.
+
+### Supernatant Removal
+#### When to use
+You have a 96 well plate with centrifuged down cells that you want to remove the supernatant from.
+#### How to use
+1. Download this repository
+2. Adjust the Z_OFFSET parameter in the script [Supernatant Removal](/Team_3/remove_supernatant_96_well.py) which accounts for the depth of the pipette in the well.
+3. Load the protocol onto an Opentrons and run it.
 
 ### File Overview
 
