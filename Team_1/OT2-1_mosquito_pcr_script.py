@@ -1,12 +1,12 @@
 from opentrons import protocol_api, simulate
 
 metadata = {
-'apiLevel': '2.8',
+'apiLevel': '2.13',
 'protocolName': 'mosquitoesPCR_8channel',
 'description': 'MRes 2023 Team 1'
 }
 
-protocol = simulate.get_protocol_api('2.8')
+protocol = simulate.get_protocol_api('2.13')
 
 requirements = {'robotType': 'OT-2'}
 
