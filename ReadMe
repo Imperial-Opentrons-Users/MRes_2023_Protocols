@@ -1,2 +1,102 @@
 This is the repo for the 2023 Opentrons Hackathon
 Put your code any supporting documents in your Team folder
+
+
+---
+
+
+# 🧬 2023 Opentrons Hackathon Repository
+
+Welcome to the **2023 Opentrons Hackathon** repository — the official, unofficial, semi-chaotic digital playground where ideas are tested, robots are wrangled, code is broken, fixed, and broken again, and scientific innovation meets copious caffeine consumption.
+
+This repo is the central hub for all hackathon submissions, half-finished experiments, triumphant code snippets, and the occasional existential README edit at 3 a.m.
+
+---
+
+## 🚀 Purpose
+
+This repository exists to:
+- Provide a collaborative space for teams to upload their **hackathon projects**, **supporting files**, and **documentation**.
+- Serve as a **digital archive** of brilliance, creativity, and questionable variable names.
+- Offer a convenient way for judges, mentors, and other curious humans to explore the results of many hours of coding, pipetting, debugging, and probably arguing about indentation styles.
+
+---
+
+## 🧪 Repository Structure
+
+```plaintext
+/
+├── Team_Alpha/
+│   ├── code/
+│   ├── data/
+│   └── README.md
+├── Team_Beta/
+│   ├── notebooks/
+│   ├── assets/
+│   └── README.md
+├── Team_Gamma/
+│   └── scripts/
+└── README.md  ← (you are here)
+
+
+
+Each team gets its own folder.
+Within that folder, you are free to unleash chaos — but please include at least some form of documentation so that future archaeologists can decipher your thought process.
+
+We don’t enforce structure. We believe in **creative entropy**.  
+But if you decide to dump everything in a folder called `stuff/`, we won’t judge (much).
+
+---
+
+## 🤖 About Opentrons
+
+Opentrons exists for one reason: to **democratize lab automation**.  
+We build robots that scientists actually want to use — robots that *pipette, mix, and sometimes sass you back through serial logs*.
+
+This hackathon is a celebration of that spirit: open, inventive, slightly chaotic, and powered by caffeine.  
+Whether your project involves integrating the OT-2 with a neural network, a Raspberry Pi, or a pineapple — this is your playground.  
+(Though seriously, please don’t plug the OT-2 into a fruit.)
+
+---
+
+## 💡 Guidelines (a.k.a. “Loose Suggestions”)
+
+1. **Creativity > Perfection**  
+   Your code doesn’t have to work perfectly. It just has to *work enough to demo convincingly*.
+
+2. **Document the madness**  
+   If your experiment fails spectacularly, write it down! Every bug is a story.  
+   Future you (and future us) will thank you.
+
+3. **Respect the folders**  
+   Please stay in your lane — or rather, your team folder.  
+   No “drive-by pull requests” fixing other teams’ code… unless it’s genuinely hilarious.
+
+4. **Git like you mean it**  
+   - Commit often.  
+   - Write messages that make at least *some* sense.  
+   - Don’t push your `.env`, your credentials, or your deep existential doubts.
+
+5. **Have fun**  
+   The only real rule. Science + silliness = progress.
+
+---
+
+## ⚙️ Setup & Usage (Sort Of)
+
+Every project here is unique — held together by **duct tape, imports, and willpower**.  
+There is no universal “setup script,” but if you must pretend there is, try something like this:
+
+```bash
+git clone https://github.com/opentrons/2023-hackathon.git
+cd 2023-hackathon/TeamName
+pip install -r requirements.txt  # if someone actually made one
+python run_the_thing.py          # fingers crossed
+```
+
+Or maybe you’ll just open a Jupyter notebook and pray.
+Either way, we believe in you.
+
+
+
+
