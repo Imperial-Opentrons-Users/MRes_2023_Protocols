@@ -1,6 +1,9 @@
 # Single Cell Whole Genome Multiple Displacement Amplification
 
-### Authors: Ryan Sze, Warren Ho, Raymond Cole Hautamaki, Elephes Sung 宋範新, Natasha Kisseroudis
+## OPentron balabalba
+
+
+### Authors: Ryan Sze, Warren Ho, Raymond Cole Hautamaki, Elephes Sung, Natasha Kisseroudis
 
 The project aims to achieve Opentron automation of whole genome Multiple Displacement Amplification (MDA) in single cells, 
 a method of non-specific DNA amplification using random hexamer primers and the phi29 DNA polymerase. These Scripts are 
