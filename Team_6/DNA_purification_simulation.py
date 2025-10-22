@@ -1,6 +1,8 @@
 from opentrons import simulate
 protocol = simulate.get_protocol_api('2.15')
 
+
+print("idoits")
 metadata = {
     "apiLevel": "2.15",
     "protocolName": "MDA protocol",
